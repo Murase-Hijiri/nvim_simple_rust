@@ -7,7 +7,8 @@ return {
     },
     config = function()
     require("nvim-tree").setup {
-        renderer = { root_folder_label = false }
+        renderer = { root_folder_label = false },
+        actions = { open_file = { quit_on_open = true }}
     }
     end,
 }
